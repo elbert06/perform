@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Diphylleia&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Nanum Brush Script','Diphylleia', serif;
+            width: device-width;
+            /* background-image: url("image-asset.gif"); */
+            background-size: 100%;
+            background-position: center;
+        }
+        .main_logo{
+            display: inline-block;
+            width: 60%;
+            height: 10%;
+            font-size: 200%;
+            
+        }.subphoto{
+            display: inline-block;
+            width: 30%;
+            height: 10%;
+            font-size: 200%;
+            
+        }
+        #check-btn { display: none; }
+        #check-btn:checked ~ .menubars { display: block; }
+        .menubars { display: none; }
+        #ai-btn{ display: none; }
+        #ai-btn:checked ~ .menubars_ai { display: block; }
+        .menubars_ai { display: none; }
+    </style>
+</head>
+<body>
+    <div style="display: flex; margin-top: 10%; align-items: center;">
+        <div class= 'main_logo' style="width: 100%;">
+            <p style="margin-left: 20%; color: black; font-size: 200%;">안녕하세요, 열정 있는 학생 김도훈 입니다</p>
+        </div>
+    </div>
+    <div style="display: flex; align-items: center;">
+        <div class= 'main_logo' style="width: 50%; color: black; font-size: 200%;">
+            <img src="352580371_638667351640161_2432646369000859087_n.jpg"
+            style="border-radius: 50%; width: 40%; margin-top: 5%; float: left; margin-left: 30%;">
+        </div>
+        <div class= 'main_logo' style="width: 50%; color: black; font-size: 200%;">
+            <b style="margin-left: 20%;">
+            <ul>
+                <li>
+                    디미고 재학중인 고2 입니다. 
+                </li>
+                <li>
+                    고등학교 1학년때 AI에 빠져서 공부는 안했음. 
+                </li>
+                <li>
+                    잘하는 거 그닥 없음. 
+                </li>
+            </ul>
+            </b>
+        </div>
+        
+    </div>
+    <div style="margin-left: 50%; display: flex; align-items: center; width: 30%; height: 10%;">
+        <a href="https://www.instagram.com/elbertkim2006/" style="width: 10%; height: 100%;" >
+            <img src="99B6AB485D09F2132A.png" style="width: 100%; height: 100%;" >
+        </a>
+        <b style="color:darkolivegreen; font-size: 150%; width: 100%; margin-left: 10%; font-family: serif;" >Instagram: elbertkim2006</b>
+    </div>
+    <div style="margin-left: 50%; display: flex; align-items: center; width: 30%; height: 10%;">
+        <a href="https://github.com/elbert06/elbert06" style="width: 10%; height: 100%;" >
+            <img src="Font_Awesome_5_brands_github.svg.png" style="width: 100%; height: 100%;" >
+        </a>
+        <b style="color:darkolivegreen; font-size: 150%; width: 100%; margin-left: 10%; font-family: serif;" >Github: elbert06</b>
+    </div>
+    <div style="border-bottom-width: 200%; border-bottom-color: black; border-bottom-style: solid;
+                margin-left: 10%; margin-top: 3%; display: flex; align-items: center; width: device-width; height: 10%; font-size: 300%;">
+        도훈이가 관심있어 하는 것
+        
+    </div>
+    <div style="margin-left : 8%; display: flex; align-items: center;">
+    <ul>
+        <li>
+            <input id="check-btn" type="checkbox" />
+            <label for="check-btn" style="font-size: 200%;">공부(더보기)</label>
+        
+            <ul class="menubars" style="font-size: 100%; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                <li>학원 다니면서 수학실력은 향상 되었으며,</li>
+                <li>기숙사 생활을 하고 있는 상황에서도 매주 토요일 9시 부터 일요일 4시까지 학원을 다닌다.</li>
+                <li>국어는 이투스 인강, 국일만, 기출단순풀이 등 여러 방면으로 시도해 보았으며, 성적이 오르지 않았다.</li>
+                <li>따라서 학원을 고민 중에 있다.</li>
+                <li>영어의 경우 고1 이후 성적이 떨어지다가 최근에 "영일만"에서 성적이 올랐다. (많이는 아니지만, 꾸준히 오르고 있다.)</li>
+            </ul>  
+        </li>
+        <li>
+            <input id="ai-btn" type="checkbox" />
+            <label for="ai-btn" style="font-size: 200%;">AI(더보기)</label>
+        
+            <ul class="menubars_ai" style="font-size: 100%; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                <li>1학년때 ai만을 공부하며 살았으며, GAN을 이해 하는데 1달 가까이 걸렸다고 한다(...)</li>
+                <li>transdiffusion에 대해 아직도 우리학교에서 완벽하게 이해한 사람이 없다</li>
+                <li>ai를 하기에는 너무 적은 인력, 너무 적은 데이터와 너무 적은 서버에 한계를 느끼고 포기를 선언했다.</li>
+                <li>대학교에 가서 ai를 할 수 있다면 좋겠지만, 만일 그러지 못할 경우 인공지능 관련 대학원을 진학할 예정이다.</li>
+                <li>최종적으로는 고급 인력이 되어서 나라 중요 과학 기술 발전에 이바지 하거나, 아니면 해외로 취업할 생각이다.</li>
+            </ul>  
+        </li>
+    </ul>    
+    </div>
+</body>
+</html>
